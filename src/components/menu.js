@@ -6,11 +6,11 @@ const StyledList = styled.ul`
   font-weight: 700;
   list-style: none;
   margin: 1rem 0;
-  /* display: none; */
+  display: none;
 `
 const styledLinkStyle = css`
   color: ${({ theme }) => theme.colors.dark};
-  /* text-align: center; */
+  text-align: center;
   text-shadow: none;
   background-image: none;
   display: block;
