@@ -8,6 +8,7 @@ const StyledWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  background: ${({ theme }) => theme.colors.primary};
 `
 const LogoWrapper = styled.div`
   height: 3rem;
