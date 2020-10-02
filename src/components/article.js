@@ -1,10 +1,9 @@
 import React from "react"
+import styled from "styled-components"
 
-const Article = (props) => (
-  <article>
-    <h2>{props.title}</h2>
-    <p>{props.text}</p>
-  </article>
-)
+const StyledWrapper = styled.div`
+  padding: 3rem 2rem;
+`
+const Article = ({ children }) => <StyledWrapper>{children}</StyledWrapper>
 
 export default Article
