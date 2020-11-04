@@ -1,9 +1,8 @@
 import React from "react"
-// import styled from "styled-components"
 import Layout from "../components/layout"
 import Article from "../components/article"
 
-const HomePage = () => (
+const ContactPage = () => (
   <Layout>
     <Article>
       <h2>Kontakt</h2>
@@ -18,4 +17,4 @@ const HomePage = () => (
   </Layout>
 )
 
-export default HomePage
+export default ContactPage
