@@ -7,7 +7,6 @@ const StyledWrapper = styled.div`
   text-align: center;
   padding: 1rem;
   background: ${({ theme }) => theme.colors.primary};
- */
 `
 const StyledHeader = styled.h2`
   margin: 1rem;

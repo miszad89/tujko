@@ -8,6 +8,7 @@ const StyledWrapper = styled.div`
 `
 const StyledButton = styled.button`
   background: ${({theme}) => theme.colors.dark};
+  color:  ${({theme}) => theme.colors.light};
 `
 const Section = (props) => (
   <StyledWrapper>
