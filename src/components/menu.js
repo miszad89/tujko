@@ -6,10 +6,10 @@ const StyledList = styled.ul`
   font-weight: 700;
   list-style: none;
   margin: 1rem 0;
-  display: none;
+  /* display: none; */
 `
 const styledLinkStyle = css`
-  color: ${({ theme }) => theme.colors.dark};
+  color: ${({ theme }) => theme.colors.light};
   text-align: center;
   text-shadow: none;
   background-image: none;
@@ -17,7 +17,8 @@ const styledLinkStyle = css`
   width: 100%;
   padding: 1rem;
   &:hover {
-    background-color: ${({ theme }) => theme.colors.grey};
+    background-color: ${({ theme }) => theme.colors.secondary};
+    border-radius: 3rem;
   }
 `
 const StyledLink = styled(props => <Link {...props} />)`

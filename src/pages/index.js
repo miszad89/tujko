@@ -8,6 +8,7 @@ const StyledHeader = styled.h1`
   text-align: center;
   font-size: 1.5rem;
   line-height: 1.5;
+  margin: 3rem 2rem 0;
 `
 const HomePage = () => (
   <Layout>

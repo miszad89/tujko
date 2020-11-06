@@ -2,7 +2,7 @@ import React from "react"
 import styled, { css } from "styled-components"
 
 const lineThickness = `0.15rem`
-const lineColor = ({ theme }) => theme.colors.dark
+const lineColor = ({ theme }) => theme.colors.light
 const lineStyle = css`
   position: absolute;
   width: 100%;

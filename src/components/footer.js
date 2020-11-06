@@ -10,6 +10,7 @@ const StyledWrapper = styled.div`
 `
 const StyledHeader = styled.h2`
   margin: 1rem;
+  color: ${({ theme }) => theme.colors.light};
 `
 const Footer = () => (
   <StyledWrapper>
