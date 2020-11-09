@@ -4,6 +4,7 @@ import Menu from "./menu"
 import Logo from "./logo"
 import Hamburger from "./hamburger"
 
+const isMenuOpen = false;
 const StyledWrapper = styled.div`
   display: flex;
   justify-content: space-between;
@@ -22,6 +23,15 @@ const Nav = styled.div`
 `
 const MenuWrapper = styled.div`
   align-self: flex-start;
+  background: ${({ theme }) => theme.colors.primary};
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  height: 100vh;
+  width: 67%;
+  z-index: 1;
+  transform: ${isMenuOpen ? "translateX(0%)" : "translateX(100%)"};
+  transition: transform 0.5s 0.1s;
 `
 const Header = () => (
   <StyledWrapper>

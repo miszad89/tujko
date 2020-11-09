@@ -6,7 +6,6 @@ const StyledList = styled.ul`
   font-weight: 700;
   list-style: none;
   margin: 1rem 0;
-  /* display: none; */
 `
 const styledLinkStyle = css`
   color: ${({ theme }) => theme.colors.light};
@@ -14,11 +13,12 @@ const styledLinkStyle = css`
   text-shadow: none;
   background-image: none;
   display: block;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto 0;
   padding: 1rem;
   &:hover {
     background-color: ${({ theme }) => theme.colors.secondary};
-    border-radius: 3rem;
+    border-radius: 1rem;
   }
 `
 const StyledLink = styled(props => <Link {...props} />)`
