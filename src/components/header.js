@@ -46,6 +46,12 @@ const TogglingMenuWrapper = styled(PosedDiv)`
     display: none;
   }
 `
+const MenuWrapper = styled.div`
+  display: none;
+  ${({ theme }) => theme.media.desktop} {
+    display: block;
+  }
+`
 class Header extends Component {
   state = {
     visible: false,
@@ -67,7 +73,9 @@ class Header extends Component {
           >
             <Menu />
           </TogglingMenuWrapper>
-          <Menu />
+          <MenuWrapper>
+            <Menu />
+          </MenuWrapper>
         </Nav>
       </StyledWrapper>
     )
