@@ -3,6 +3,7 @@ import { createGlobalStyle, ThemeProvider } from "styled-components"
 import { theme } from "../utils/theme"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import SEO from "../components/seo"
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -18,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <>
+      <SEO />
       <GlobalStyle />
       <Header />
       {children}

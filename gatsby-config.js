@@ -6,6 +6,11 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `TUJKO S.C. - Specjalistyczny Zakład Naprawy Felg`,
+    description: `TUJKO S.C. Specjalistyczny Zakład Naprawy Felg. Sprzedaż felg i opon. Wulkanizacja. Wyważanie z optymalizacją geometryczną. Naprawa i regeneracja felg stalowych i aluminiowych, polerowanie.`,
+    author: `miszad89`,
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -30,5 +35,6 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
   ],
 }
