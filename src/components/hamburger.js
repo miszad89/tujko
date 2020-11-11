@@ -39,8 +39,8 @@ const HamburgerInner = styled.span`
     top: 0.6rem;
   }
 `
-const Hamburger = () => (
-  <HamburgerButton>
+const Hamburger = (props) => (
+  <HamburgerButton onClick={props.onClick}>
     <HamburgerBox>
       <HamburgerInner />
     </HamburgerBox>

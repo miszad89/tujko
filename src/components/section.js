@@ -15,20 +15,23 @@ const StyledButton = styled.button`
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   padding: 0.5rem;
-  margin: 2rem;
-  border-radius: 3rem;
+  width: 90%;
+  border-radius: 1rem;
   border: none;
   cursor: pointer;
   &:hover {
     background-color: ${({ theme }) => theme.colors.secondary};
   }
 `
+const StyledH3 = styled.h3`
+  margin-top: 0rem;
+`
 const StyledLink = styled(props => <Link {...props} />)`
   background-image: none;
 `
 const Section = props => (
   <StyledWrapper>
-    <h3>{props.title}</h3>
+    <StyledH3>{props.title}</StyledH3>
     <p>{props.text}</p>
     <StyledLink to="/pricelist/" tabindex="-1">
       <StyledButton>Zobacz pełen cennik</StyledButton>

@@ -10,6 +10,9 @@ const StyledHeader = styled.h1`
   line-height: 1.5;
   margin: 3rem 2rem 0;
 `
+const StyledP = styled.p`
+  /* text-align: center; */
+`
 const HomePage = () => (
   <Layout>
     <Hero />
@@ -19,14 +22,14 @@ const HomePage = () => (
     </StyledHeader>
     <Article>
       <h2>O nas</h2>
-      <p>
+      <StyledP>
         Naprawiamy koła samochodów osobowych i dostawczych, motocykli oraz
         quadów. Prowadzimy sprzedaż ogumienia, felg nowych i używanych oraz śrub
         i zabezpieczeń do kół. Oferujemy również usługi wulkanizacyjne,
         wyważanie kół z optymalizacją geometryczną, sezonowe przechowywanie kół,
         regeneracja otworów, piaskowanie, poszerzanie, malowanie polerowanie
         felg oraz sezonowe przechowywanie kół.
-      </p>
+      </StyledP>
     </Article>
   </Layout>
 )
