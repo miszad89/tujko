@@ -26,14 +26,14 @@ const PosedDiv = posed.div({
   visible: {
     x: 0,
     opacity: 1,
-    transition: { ease: 'easeOut', duration: 300 }
+    transition: { ease: "easeOut", duration: 300 },
   },
   hidden: {
     x: "-100%",
     opacity: 0,
   },
 })
-const MenuWrapper = styled(PosedDiv)`
+const TogglingMenuWrapper = styled(PosedDiv)`
   align-self: flex-start;
   background: ${({ theme }) => theme.colors.primary};
   position: absolute;
@@ -42,6 +42,9 @@ const MenuWrapper = styled(PosedDiv)`
   height: 100vh;
   width: 100%;
   z-index: 1;
+  ${({ theme }) => theme.media.desktop} {
+    display: none;
+  }
 `
 class Header extends Component {
   state = {
@@ -58,12 +61,13 @@ class Header extends Component {
         </LogoWrapper>
         <Nav>
           <Hamburger onClick={this.toggleMenu} />
-          <MenuWrapper
+          <TogglingMenuWrapper
             pose={this.state.visible ? "visible" : "hidden"}
             onClick={this.toggleMenu}
           >
             <Menu />
-          </MenuWrapper>
+          </TogglingMenuWrapper>
+          <Menu />
         </Nav>
       </StyledWrapper>
     )

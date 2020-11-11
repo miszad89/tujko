@@ -6,6 +6,11 @@ const StyledList = styled.ul`
   font-weight: 700;
   list-style: none;
   margin: 1rem 0;
+  ${({ theme }) => theme.media.desktop} {
+    display: flex;
+    flex-direction: row;
+    margin: 0 1rem;
+  }
 `
 const styledLinkStyle = css`
   color: ${({ theme }) => theme.colors.light};
@@ -19,6 +24,9 @@ const styledLinkStyle = css`
   &:hover {
     background-color: ${({ theme }) => theme.colors.secondary};
     border-radius: 1rem;
+  }
+  ${({ theme }) => theme.media.desktop} {
+    width: 100%;
   }
 `
 const StyledLink = styled(props => <Link {...props} />)`

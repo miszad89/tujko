@@ -18,6 +18,9 @@ const HamburgerButton = styled.button`
   width: 3rem;
   height: 3rem;
   cursor: pointer;
+  ${({ theme }) => theme.media.desktop} {
+    display: none;
+  }
 `
 const HamburgerBox = styled.span`
   display: inline-block;
